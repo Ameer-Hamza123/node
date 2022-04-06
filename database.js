@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-mongoose.connect("mongodb://127.0.0.1:27017/testAppication").then(()=>{
+mongoose.connect("mongodb+srv://hamza:qwert159@cluster0.rznbe.mongodb.net/apis").then(()=>{
     console.log("Successfully Connected to Database.");
 }).catch((e)=>{console.log(e);})
 
