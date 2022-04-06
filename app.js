@@ -25,6 +25,5 @@ app.use((req, res, next) => {
 
 
 app.use("/api", apiRoute);
-const PORT = process.env.PORT || 5000  # Fall back to port 5000 if process.env.PORT is not set
 
-app.listen(PORT, () => console.log(`Listening on ${ PORT }`))
+app.listen(8080);
