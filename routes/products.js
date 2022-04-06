@@ -8,7 +8,7 @@ router.get("/list", productController.getAllProducts);
 
 router.get("/", productController.getProducts);
 
-router.post("/add", authMiddleware,userroleMiddleware, productController.postProduct);
+router.post("/add", productController.postProduct);
 
 router.patch("/edit", authMiddleware,userroleMiddleware, productController.editProduct);
 
